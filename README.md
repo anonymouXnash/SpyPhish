@@ -18,8 +18,11 @@ cd SpyPhish
 bash spyphish.sh
 ```
 ## NOTE :
-<P>The captured media are stored in SpyPhish folder </p>
+<P>The captured media are stored in SpyPhish folder. You can use a file manager to access them or your terminal. </p>
+
+ANDROID
 
 ```
-cd SpyPhish
+FILE MANAGER /data/data/com.termux/files/home/SpyPhish
+TERMUX cd /home/SpyPhish
 ```
