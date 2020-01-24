@@ -92,7 +92,7 @@ done
 
 server() {
 
-command -v ssh > /dev/null 2>&1 || { echo >&2 "You need ssh but e no dey installed. Install am like this LINUX apt-get install ssh/TERMUX pkg install ssh."; exit 1; }
+command -v ssh > /dev/null 2>&1 || { echo >&2 "You need ssh but e no dey installed. Install am like this LINUX apt-get install openssh/TERMUX pkg install openssh."; exit 1; }
 
 printf "\e[1;77m[\e[0m\e[1;93m+\e[0m\e[1;77m] Server dey start...\e[0m\n"
 
@@ -194,7 +194,7 @@ read -p $'\n\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] Choose the Port Forwarding opt
 option_server="${option_server:-${default_option_server}}"
 if [[ $option_server -eq 1 ]]; then
 
-command -v php > /dev/null 2>&1 || { echo >&2 "You need ssh but e no dey installed. Install am like this LINUX apt-get install ssh/TERMUX pkg install ssh."; exit 1; }
+command -v php > /dev/null 2>&1 || { echo >&2 "You need ssh but e no dey installed. Install am like this LINUX apt-get install openssh/TERMUX pkg install openssh."; exit 1; }
 start
 
 elif [[ $option_server -eq 2 ]]; then
