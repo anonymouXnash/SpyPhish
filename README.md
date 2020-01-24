@@ -18,7 +18,8 @@ cd SpyPhish
 bash spyphish.sh
 ```
 ## NOTE :
-<P>The captured media are stored in SpyPhish folder</p>
+<P>The captured media are stored in SpyPhish folder </p>
+
 ```
 cd SpyPhish
 ```
