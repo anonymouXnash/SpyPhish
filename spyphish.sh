@@ -159,6 +159,7 @@ if [[ -e ngrok-stable-linux-386.zip ]]; then
 unzip ngrok-stable-linux-386.zip > /dev/null 2>&1
 chmod +x ngrok
 rm -rf ngrok-stable-linux-386.zip
+cp ngrok /usr/bin
 else
 printf "\e[1;93m[!]Guy e no gree download o... \e[0m\n"
 printf "\e[1;93m[!]Check if your data dey ON sef\e[0m\n"
@@ -188,7 +189,7 @@ fi
 
 printf "\n"
 printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m Serveo.net\e[0m\n"
-printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m Ngrok\e[0m\n"
+printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m Ngrok(Recommended)\e[0m\n"
 default_option_server="1"
 read -p $'\n\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] Choose the Port Forwarding option wey you wan use: \e[0m' option_server
 option_server="${option_server:-${default_option_server}}"
